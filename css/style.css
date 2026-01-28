@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Karla', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -47,7 +47,7 @@ header {
 
 .logo {
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.05rem;
   margin-bottom: 0.15rem;
   text-transform: uppercase;
@@ -206,49 +206,37 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px 7% 20px 7%;
-  border-top: 1px solid #eee;
-  background: #fff;
 }
 
 .footer-content p {
   color: var(--accent-color);
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.social-links {
-  margin-bottom: 0.5rem;
-}
-.social-links a {
-  text-decoration: none;
-  color: var(--text-color);
   font-size: 0.8rem;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  transition: color 0.3s;
-}
-
-.social-links a:hover {
-  color: var(--accent-color);
-}
-
-.back-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #000;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  transition: color 0.3s ease;
-}
-
-.back-link:hover {
-  color: var(--text-color);
 }
 
 .logo a {
   cursor: pointer;
+}
+
+#home-project-list {
+  flex: 1;
+  margin: 0 auto;
+  width: 100%;
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    color: #000;
+    font-family: 'Domine', serif;
+  }
+
+  :hover {
+    color: #888;
+  }
 }
 
 @media (max-width: 768px) {
@@ -298,5 +286,37 @@ footer {
   header {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding: 10px 7% 10px 7%;
+  }
+
+  #home-project-list {
+    padding: 10px 0 10px 0;
+
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #home-project-list {
+    a {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #home-project-list {
+    padding: 10px 20% 10px 20%;
+
+    a {
+      font-size: 2rem;
+    }
   }
 }
