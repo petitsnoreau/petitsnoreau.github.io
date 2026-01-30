@@ -96,6 +96,16 @@ button.gclose.gbtn {
   background-color: #000;
 }
 
+.livres,
+.info {
+  padding: 5%;
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'Domine', serif;
+}
+
 .grid-container {
   opacity: 0;
   display: flex;
