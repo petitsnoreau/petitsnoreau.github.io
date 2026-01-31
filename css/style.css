@@ -80,6 +80,7 @@ nav ul li a:hover {
 
 .gslide-image img {
   max-height: 85vh !important;
+  max-width: 90vw !important;
 }
 
 div.gslide-media.gslide-image {
@@ -91,9 +92,8 @@ div.gslide-media.gslide-image {
 }
 
 button.gnext.gbtn,
-button.gprev.gbtn,
-button.gclose.gbtn {
-  background-color: #000;
+button.gprev.gbtn {
+  display: none;
 }
 
 .livres,
