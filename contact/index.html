@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <title>Luc Lavoie | Photographie</title>
+    <title>Luc Lavoie | Contact</title>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -48,24 +48,37 @@
 
     
 <main id="content">
-  <section id="home-project-list" class="active">
-    <ul>
-      <li>
-        <a href="/nature" class="home-project">Essais pictorialistes</a>
-      </li>
-      <li>
-        <a href="/monteregie" class="home-project">Se souvenir de la Montérégie</a>
-      </li>
-      <li>
-        <a href="/peupliers" class="home-project">Populus deltoides</a>
-      </li>
-      <li>
-        <a href="/espaces" class="home-project">Espaces</a>
-      </li>
-      <li>
-        <a href="/visions" class="home-project">Visions forestières</a>
-      </li>
-    </ul>
+  <section class="info">
+    <div class="contact-container">
+      <form action="https://api.staticforms.dev/submit" method="POST">
+        <input type="hidden" name="apiKey" value="sf_5f26ab35b111c97d216f30aa" />
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="https://www.luclavoie.ca/contact-confirmation"
+        />
+        <input type="text" name="honeypot" style="display: none" />
+
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Courriel</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="submit-container">
+          <button type="submit" class="submit-btn">Envoyer</button>
+        </div>
+      </form>
+    </div>
   </section>
 </main>
 
